@@ -1,6 +1,8 @@
 import Container from "@/components/Container";
 import React from "react";
 import NavLink from "./NavLink";
+import Logo from "@/components/Logo";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -43,7 +45,10 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">CarClinify</a>
+          <Link href={"/"} className="flex items-center justify-center gap-2">
+            <Logo className="w-10" />
+            <span className="text-xl font-bold">Car-Clinify</span>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-2 space-x-4">
@@ -61,7 +66,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end space-x-4">
+        <div className="navbar-end space-x-2">
           <label className="toggle text-base-content">
             <input type="checkbox" value="dark" className="theme-controller" />
 
@@ -105,7 +110,12 @@ const Navbar = () => {
               </g>
             </svg>
           </label>
-          <a className="btn">Button</a>
+          <Link href={"/login"} className="btn btn-secondary">
+            Login
+          </Link>
+          <Link href={"/signup"} className="btn btn-secondary">
+            Signup
+          </Link>
         </div>
       </Container>
     </div>
