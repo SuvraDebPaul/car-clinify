@@ -1,2 +1,90 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+/* =====================================
+   LIGHT THEME (DEFAULT)
+===================================== */
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+
+  /* ===== Brand ===== */
+  --color-primary: #1e1650;
+  --color-primary-content: #ffffff;
+
+  --color-secondary: #143064;
+  --color-secondary-content: #ffffff;
+
+  --color-accent: #0e1b41;
+  --color-accent-content: #ffffff;
+
+  /* ===== Backgrounds ===== */
+  --color-base-100: #f8faff; /* page */
+  --color-base-200: #ffffff; /* cards */
+  --color-base-300: #e2e8f0; /* borders */
+
+  /* ===== Text ===== */
+  --color-base-content: #0e1b41;
+  --color-neutral: #3a4a7a;
+  --color-neutral-content: #ffffff;
+
+  /* ===== Feedback ===== */
+  --color-info: #3b82f6;
+  --color-info-content: #ffffff;
+
+  --color-success: #22c55e;
+  --color-success-content: #ffffff;
+
+  --color-warning: #f59e0b;
+  --color-warning-content: #000000;
+
+  --color-error: #ef4444;
+  --color-error-content: #ffffff;
+}
+
+/* =====================================
+   DARK THEME
+===================================== */
+@plugin "daisyui/theme" {
+  name: "dark";
+
+  /* ===== Brand ===== */
+  --color-primary: #1e1650;
+  --color-primary-content: #ffffff;
+
+  --color-secondary: #143064;
+  --color-secondary-content: #ffffff;
+
+  --color-accent: #0e1b41;
+  --color-accent-content: #ffffff;
+
+  /* ===== Backgrounds ===== */
+  --color-base-100: #0b1024; /* page */
+  --color-base-200: #121a3a; /* cards */
+  --color-base-300: #1f2a55; /* borders */
+
+  /* ===== Text ===== */
+  --color-base-content: #e6ebff;
+  --color-neutral: #b7c0ff;
+  --color-neutral-content: #0b1024;
+
+  /* ===== Feedback ===== */
+  --color-info: #60a5fa;
+  --color-info-content: #0b1024;
+
+  --color-success: #4ade80;
+  --color-success-content: #0b1024;
+
+  --color-warning: #fbbf24;
+  --color-warning-content: #0b1024;
+
+  --color-error: #f87171;
+  --color-error-content: #0b1024;
+}
+
+/* =====================================
+   OPTIONAL: SMOOTH THEME TRANSITION
+===================================== */
+html {
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
